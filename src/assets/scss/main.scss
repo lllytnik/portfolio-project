@@ -1,0 +1,17 @@
+body {
+  background: #000;
+  color: white;
+}
+
+/* === BASE === */
+@import "./base/normalize";
+@import "./base/fonts";
+/* === LAYOUT === */
+@import "./layout/header/header";
+@import "./layout/footer/footer";
+
+/* === COMPONENTS === */
+@import "./components/buttons";
+/* === ABSTRACTS === */
+@import "./abstracts/vars";
+@import "./abstracts/mixins";
