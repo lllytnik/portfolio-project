@@ -1,5 +1,5 @@
 body {
-    background: #000;
+    background: #635b5b;
     color: white;
 }
 
@@ -361,5 +361,29 @@ template {
 }
 
 /* === LAYOUT === */
+.social__img {
+    width: 20px;
+    height: 20px;
+}
+
+.img-svg path {
+    fill: aqua;
+}
+
+.logo__img {
+    width: 285px;
+}
+
+.header__burger-btn {
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+.header__burger-img {
+    width: 39px;
+}
+
 /* === COMPONENTS === */
 /* === ABSTRACTS === */

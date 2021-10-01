@@ -1,0 +1,47 @@
+.about {
+  padding: 180px 15px;
+  background: #22252c;
+}
+.about__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.about__photo {
+}
+
+.about__info {
+  width: 502px;
+}
+.about__title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 0.54px;
+
+  text-transform: uppercase;
+  color: #00d7bb;
+}
+.about__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.56px;
+  line-height: normal;
+  color: #ffffff;
+}
+.about__list {
+  margin-top: 10px;
+  list-style: none;
+}
+.about__item {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 2.5;
+  color: #ffffff;
+}
+.about__item-active {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  color: #00d7bb;
+}

@@ -1,0 +1,69 @@
+.header {
+  min-height: 900px;
+  padding: 53px 15px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 242, 152, 0.78) 0%,
+    rgba(7, 247, 247, 0.78) 100%
+  );
+  //url("https://mdn.mozillademos.org/files/15525/critters.png");
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.header__social {
+  min-width: 100px;
+}
+.header__logo {
+  margin-left: 8px;
+}
+.header__topic {
+  margin-top: 287px;
+}
+.header__title {
+  margin-top: 15px !important;
+  font-family: "Open Sans", sans-serif;
+  font-size: 84px;
+  font-weight: 100 !important;
+  color: #ffffff;
+}
+.header__title-active {
+  font-family: "Open Sans", sans-serif;
+  font-size: 84px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.header__subtitle {
+  margin-left: 8px !important;
+  font-family: "Open Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  color: #ffffff;
+}
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.social__img {
+  width: 20px;
+  height: 20px;
+}
+.img-svg path {
+  fill: #ffffff;
+}
+.logo__img {
+  width: 285px;
+}
+.header__burger-btn {
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+.header__burger-img {
+  width: 39px;
+}
