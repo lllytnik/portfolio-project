@@ -1,5 +1,5 @@
 .container {
-  width: 1114px;
+  max-width: 1114px;
   margin: 0 auto; }
 
 h1,
@@ -395,7 +395,7 @@ template {
 
 .about {
   padding: 180px 15px;
-  background: #22252c; }
+  background: #313741; }
 
 .about__inner {
   display: flex;
@@ -431,10 +431,74 @@ template {
   line-height: 2.5;
   color: #ffffff; }
 
+.about__tel {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 2.5;
+  color: #ffffff; }
+
+.about__email {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 2.5;
+  color: #ffffff; }
+
 .about__item-active {
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
   color: #00d7bb; }
+
+.education {
+  padding: 180px 15px;
+  background: #22252c; }
+
+.education__title {
+  color: #00d7bb;
+  font-family: "Open Sans", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase; }
+
+.education__article {
+  display: grid;
+  grid-template-columns: 1fr 35px 1fr;
+  grid-gap: 20px;
+  margin-top: 140px; }
+
+.article__title {
+  text-align: end;
+  color: #00d7bb;
+  font-family: "Open Sans - Semibold";
+  font-size: 27px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.article__subtitle {
+  text-align: end;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.article__inner {
+  align-self: flex-end; }
+
+.article__text {
+  align-self: flex-end;
+  text-align: start;
+  width: 400px;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  letter-spacing: 0.28px; }
 
 /* === COMPONENTS === */
 /* === ABSTRACTS === */

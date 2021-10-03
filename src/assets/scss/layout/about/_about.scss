@@ -1,6 +1,6 @@
 .about {
   padding: 180px 15px;
-  background: #22252c;
+  background: #313741;
 }
 .about__inner {
   display: flex;
@@ -34,6 +34,22 @@
   list-style: none;
 }
 .about__item {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 2.5;
+  color: #ffffff;
+}
+.about__tel {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 2.5;
+  color: #ffffff;
+}
+.about__email {
+  text-decoration: none;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-weight: 100;

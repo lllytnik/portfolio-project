@@ -1,5 +1,5 @@
 .container {
-  width: 1114px;
+  max-width: 1114px;
   margin: 0 auto;
 }
 h1,
@@ -16,6 +16,7 @@ h6 {
 /* === LAYOUT === */
 @import "./layout/header/header";
 @import "./layout/about/about";
+@import "./layout/about/education";
 @import "./layout/footer/footer";
 
 /* === COMPONENTS === */
