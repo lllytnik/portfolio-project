@@ -455,50 +455,101 @@ template {
 .education {
   padding: 180px 15px;
   background: #22252c; }
+  .education__title {
+    color: #00d7bb;
+    font-family: "Open Sans", sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase; }
 
-.education__title {
-  color: #00d7bb;
-  font-family: "Open Sans", sans-serif;
-  font-size: 45px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase; }
-
-.education__article {
-  display: grid;
-  grid-template-columns: 1fr 35px 1fr;
-  grid-gap: 20px;
-  margin-top: 140px; }
-
-.article__title {
-  text-align: end;
-  color: #00d7bb;
-  font-family: "Open Sans - Semibold";
-  font-size: 27px;
-  font-weight: 700;
-  text-transform: uppercase; }
-
-.article__subtitle {
-  text-align: end;
-  color: #ffffff;
-  font-family: "Open Sans";
-  font-size: 16px;
-  font-weight: 400;
-  text-transform: uppercase; }
-
-.article__inner {
-  align-self: flex-end; }
-
-.article__text {
-  align-self: flex-end;
-  text-align: start;
-  width: 400px;
-  color: #ffffff;
-  font-family: "Open Sans";
-  font-size: 14px;
-  font-weight: 400;
-  text-align: left;
-  letter-spacing: 0.28px; }
+.entry {
+  max-width: 875px;
+  margin: 0 auto; }
+  .entry__list:first-child {
+    margin-top: 135px; }
+  .entry .entry__wrap {
+    position: relative;
+    margin: 139px 0 96px 0;
+    text-align: center; }
+    .entry .entry__wrap::before {
+      content: "";
+      top: 66px;
+      left: 435px;
+      width: 5px;
+      height: 340px;
+      position: absolute;
+      background: url(../images/education/line.png) no-repeat; }
+  .entry__inner {
+    align-self: flex-start; }
+  .entry__item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 68px; }
+    .entry__item:nth-child(2) {
+      margin-top: 155px; }
+    .entry__item::before {
+      content: "";
+      top: 13px;
+      left: 420px;
+      width: 34px;
+      height: 35px;
+      position: absolute;
+      background: url(../images/education/icon-headdress.png) no-repeat; }
+  .entry__title {
+    text-align: end;
+    color: #00d7bb;
+    font-family: "Open Sans - Semibold";
+    font-size: 27px;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .entry__data {
+    display: block;
+    margin-top: 15px;
+    text-align: end;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase; }
+  .entry__text {
+    align-self: flex-end;
+    width: 400px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: 0.28px;
+    line-height: 22px; }
+  .entry__title-inverse {
+    text-align: start;
+    color: #00d7bb;
+    font-family: "Open Sans - Semibold";
+    font-size: 27px;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .entry__data-inverse {
+    display: block;
+    margin-top: 15px;
+    text-align: start;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase; }
+  .entry__text-inverse {
+    align-self: flex-start;
+    justify-self: end;
+    text-align: end;
+    width: 400px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.28px;
+    line-height: 22px; }
 
 /* === COMPONENTS === */
 /* === ABSTRACTS === */

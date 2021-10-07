@@ -1,5 +1,5 @@
 .container {
-    width: 1114px;
+    max-width: 1114px;
     margin: 0 auto;
 }
 
@@ -453,7 +453,7 @@ template {
 
 .about {
     padding: 180px 15px;
-    background: #22252c;
+    background: #313741;
 }
 
 .about__inner {
@@ -498,10 +498,131 @@ template {
     color: #ffffff;
 }
 
+.about__tel {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 2.5;
+    color: #ffffff;
+}
+
+.about__email {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 2.5;
+    color: #ffffff;
+}
+
 .about__item-active {
     font-family: "Open Sans", sans-serif;
     font-weight: 100;
     color: #00d7bb;
+}
+
+.education {
+    padding: 180px 15px;
+    background: #22252c;
+}
+
+.education__title {
+    color: #00d7bb;
+    font-family: "Open Sans", sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.entry__list:first-child {
+    margin-top: 135px;
+}
+
+.entry__inner {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+}
+
+.entry__item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 68px;
+}
+
+.entry__item:nth-child(2) {
+    margin-top: 155px;
+}
+
+.entry__item::before {
+    content: "";
+    top: 0;
+    right: 0;
+    position: absolute;
+    background: url(../images/education/icon-headdress.png) no-repeat;
+}
+
+.entry__title {
+    text-align: end;
+    color: #00d7bb;
+    font-family: "Open Sans - Semibold";
+    font-size: 27px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.entry__subtitle {
+    text-align: end;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.entry__text {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    width: 400px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: 0.28px;
+}
+
+.entry__title-inverse {
+    text-align: start;
+    color: #00d7bb;
+    font-family: "Open Sans - Semibold";
+    font-size: 27px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.entry__subtitle-inverse {
+    text-align: start;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.entry__text-inverse {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    justify-self: end;
+    text-align: end;
+    width: 400px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.28px;
 }
 
 /* === COMPONENTS === */
