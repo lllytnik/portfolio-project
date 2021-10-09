@@ -395,11 +395,26 @@ template {
 
 .about {
   padding: 180px 15px;
-  background: #313741; }
+  background: #dce3f5; }
 
 .about__inner {
   display: flex;
   justify-content: space-between; }
+
+.about__img {
+  width: 334px;
+  position: relative; }
+
+.about__photo {
+  position: relative; }
+  .about__photo::before {
+    content: "";
+    top: 20px;
+    left: 20px;
+    width: 334px;
+    height: 417px;
+    position: absolute;
+    border: 5px solid #ffffff; }
 
 .about__info {
   width: 502px; }
@@ -451,6 +466,42 @@ template {
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
   color: #00d7bb; }
+
+.about__skills {
+  margin-top: 160px; }
+
+.about__title-skills {
+  text-align: center;
+  color: #00d7bb;
+  font-family: "Open Sans", sans-serif;
+  font-size: 39px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3.84px; }
+
+.about__list-skills {
+  margin-top: 75px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 30px;
+  list-style: none; }
+
+.about__item-skills {
+  width: 120px; }
+
+.about__img-skills {
+  width: 100%; }
+
+.about__item-skills:nth-child(5) {
+  width: 60px; }
+
+.about__item-skills:nth-child(7) {
+  width: 77px; }
+
+.about__item-skills:nth-child(8) {
+  width: 90px; }
 
 .education {
   padding: 180px 15px;

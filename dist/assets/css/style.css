@@ -463,6 +463,10 @@ template {
     justify-content: space-between;
 }
 
+.about__img {
+    width: 334px;
+}
+
 .about__info {
     width: 502px;
 }
@@ -522,6 +526,51 @@ template {
     color: #00d7bb;
 }
 
+.about__skills {
+    margin-top: 160px;
+}
+
+.about__title-skills {
+    text-align: center;
+    color: #00d7bb;
+    font-family: "Open Sans", sans-serif;
+    font-size: 39px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3.84px;
+}
+
+.about__list-skills {
+    margin-top: 75px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    -ms-flex-align: center;
+    align-items: center;
+    justify-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.about__item-skills {
+    width: 120px;
+}
+
+.about__img-skills {
+    width: 100%;
+}
+
+.about__item-skills:nth-child(5) {
+    width: 60px;
+}
+
+.about__item-skills:nth-child(7) {
+    width: 77px;
+}
+
+.about__item-skills:nth-child(8) {
+    width: 90px;
+}
+
 .education {
     padding: 180px 15px;
     background: #22252c;
@@ -536,8 +585,29 @@ template {
     text-transform: uppercase;
 }
 
+.entry {
+    max-width: 875px;
+    margin: 0 auto;
+}
+
 .entry__list:first-child {
     margin-top: 135px;
+}
+
+.entry .entry__wrap {
+    position: relative;
+    margin: 139px 0 96px 0;
+    text-align: center;
+}
+
+.entry .entry__wrap::before {
+    content: "";
+    top: 66px;
+    left: 435px;
+    width: 5px;
+    height: 340px;
+    position: absolute;
+    background: url(../images/education/line.png) no-repeat;
 }
 
 .entry__inner {
@@ -558,8 +628,10 @@ template {
 
 .entry__item::before {
     content: "";
-    top: 0;
-    right: 0;
+    top: 13px;
+    left: 420px;
+    width: 34px;
+    height: 35px;
     position: absolute;
     background: url(../images/education/icon-headdress.png) no-repeat;
 }
@@ -573,7 +645,9 @@ template {
     text-transform: uppercase;
 }
 
-.entry__subtitle {
+.entry__data {
+    display: block;
+    margin-top: 15px;
     text-align: end;
     color: #ffffff;
     font-family: "Open Sans";
@@ -592,6 +666,7 @@ template {
     font-weight: 400;
     text-align: left;
     letter-spacing: 0.28px;
+    line-height: 22px;
 }
 
 .entry__title-inverse {
@@ -603,7 +678,9 @@ template {
     text-transform: uppercase;
 }
 
-.entry__subtitle-inverse {
+.entry__data-inverse {
+    display: block;
+    margin-top: 15px;
     text-align: start;
     color: #ffffff;
     font-family: "Open Sans";
@@ -623,6 +700,7 @@ template {
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.28px;
+    line-height: 22px;
 }
 
 /* === COMPONENTS === */
