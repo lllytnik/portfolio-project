@@ -602,6 +602,83 @@ template {
     letter-spacing: 0.28px;
     line-height: 22px; }
 
+.works {
+  padding: 180px 15px;
+  background-image: linear-gradient(-250deg, #00d7c5 0%, rgba(3, 214, 172, 0.96) 53%, rgba(0, 215, 182, 0.92) 100%); }
+
+.works__title {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.9px; }
+
+.works__list {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  list-style: none; }
+
+w.works__item {
+  width: 300px; }
+
+.works__img {
+  width: 100%; }
+
+.contact {
+  padding: 180px 15px;
+  background-image: linear-gradient(-250deg, #a3bfda 0%, rgba(3, 214, 172, 0.96) 53%, rgba(0, 215, 182, 0.92) 100%); }
+
+.contact__inner {
+  display: flex;
+  justify-content: space-between; }
+
+.contact__wrapper {
+  text-align: center;
+  padding: 0 5px; }
+
+.contact__img {
+  width: 66px;
+  height: 68px; }
+
+.contact__title {
+  color: #25292f;
+  font-family: "Open Sans", sans-serif;
+  font-size: 37px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.81px; }
+
+.contact__span {
+  display: inline-block;
+  width: 547px;
+  height: 31px;
+  color: #22252c;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.28px; }
+
+.contact__btn {
+  width: 180px;
+  height: 55px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #22252c;
+  color: #02cfb4;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3.61px; }
+
 /* === COMPONENTS === */
 /* === ABSTRACTS === */
 

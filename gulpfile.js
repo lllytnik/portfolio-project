@@ -56,7 +56,6 @@ const jsFiles = [
     srcPath + 'assets/js/*.js'
 ]
 
-
 // TASKS
 // объявляем функции под сборки (все пути относительные)
 
