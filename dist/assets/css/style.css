@@ -1,3 +1,7 @@
+body {
+    background: linear-gradient(205deg, #4380d3, rgba(105, 150, 211, 0.718925) 69%);
+}
+
 .container {
     max-width: 1114px;
     margin: 0 auto;
@@ -373,7 +377,7 @@ template {
 .header {
     min-height: 900px;
     padding: 53px 15px;
-    background-image: linear-gradient(to right, rgba(0, 242, 152, 0.78) 0%, rgba(7, 247, 247, 0.78) 100%);
+    background: linear-gradient(160deg, #4380d3 0%, rgba(105, 150, 211, 0.718925) 69%), url("../images/header/fon-header.jpg") no-repeat;
 }
 
 .header__top {
@@ -412,6 +416,7 @@ template {
 }
 
 .header__subtitle {
+    margin-top: 10px !important;
     margin-left: 8px !important;
     font-family: "Open Sans", sans-serif;
     font-size: 28px;
@@ -453,7 +458,8 @@ template {
 
 .about {
     padding: 180px 15px;
-    background: #dce3f5;
+    background: #4380d3;
+    background: linear-gradient(323deg, #4380d3 0%, rgba(105, 150, 211, 0.718925) 69%);
 }
 
 .about__inner {
@@ -720,7 +726,7 @@ template {
 
 .works {
     padding: 180px 15px;
-    background-image: linear-gradient(-250deg, #00d7c5 0%, rgba(3, 214, 172, 0.96) 53%, rgba(0, 215, 182, 0.92) 100%);
+    background: linear-gradient(205deg, #4380d3, rgba(105, 150, 211, 0.718925) 69%);
 }
 
 .works__title {
@@ -757,6 +763,93 @@ w.works__item {
 .contact__inner {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.contact__wrapper {
+    text-align: center;
+    padding: 0 5px;
+}
+
+.contact__img {
+    width: 66px;
+    height: 68px;
+}
+
+.contact__title {
+    color: #25292f;
+    font-family: "Open Sans", sans-serif;
+    font-size: 37px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.81px;
+}
+
+.contact__span {
+    margin-top: 5px;
+    display: inline-block;
+    width: 547px;
+    height: 31px;
+    color: #22252c;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.28px;
+}
+
+.contact__btn {
+    width: 180px;
+    height: 55px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
+    background-color: #22252c;
+    color: #02cfb4;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3.61px;
+}
+
+.footer {
+    padding: 40px 15px;
+    background: #22252c;
+}
+
+.footer__wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.footer__social {
+    width: 100%;
+    max-width: 238px;
+}
+
+.footer__line {
+    margin: 74px 0 40px 0;
+    width: 100%;
+    height: 1px;
+    background-color: #313741;
+}
+
+.footer__copyright {
+    text-align: center;
+    color: #02cfb4;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.56px;
 }
 
 /* === COMPONENTS === */

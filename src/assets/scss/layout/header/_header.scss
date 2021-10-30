@@ -1,12 +1,13 @@
 .header {
-  min-height: 900px;
+  min-height: 100vh;
   padding: 53px 15px;
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 242, 152, 0.78) 0%,
-    rgba(7, 247, 247, 0.78) 100%
-  );
-  //url("https://mdn.mozillademos.org/files/15525/critters.png");
+  background-size: cover;
+  background: linear-gradient(
+      160deg,
+      rgba(67, 128, 211, 1) 0%,
+      rgba(105ç, 150, 211, 0.7189250700280112) 69%
+    ),
+    url("../images/header/fon-header.jpg") no-repeat;
 }
 .header__top {
   display: flex;
@@ -36,6 +37,7 @@
   color: #ffffff;
 }
 .header__subtitle {
+  margin-top: 10px !important;
   margin-left: 8px !important;
   font-family: "Open Sans", sans-serif;
   font-size: 28px;

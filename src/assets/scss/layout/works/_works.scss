@@ -1,11 +1,5 @@
 .works {
   padding: 180px 15px;
-  background-image: linear-gradient(
-    -250deg,
-    #00d7c5 0%,
-    rgba(3, 214, 172, 0.96) 53%,
-    rgba(0, 215, 182, 0.92) 100%
-  );
 }
 .works__title {
   color: #ffffff;
@@ -23,9 +17,96 @@
   gap: 30px;
   list-style: none;
 }
-w.works__item {
-  width: 300px;
-}
+
 .works__img {
   width: 100%;
+}
+
+.effects {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.effects__wrap {
+  margin-right: auto;
+  margin-left: auto;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.works__list {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+}
+
+.works__list li {
+  position: relative;
+  display: inline-block;
+  box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.08);
+
+  font: normal 14px sans-serif;
+  margin: 0;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+@media (max-width: 350px) {
+  .works__list li {
+    font-size: 10px;
+  }
+}
+
+.works__list li img {
+  display: block;
+  position: relative;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.works__list li > div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.works__list li:hover > div {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.works__list li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+}
+
+.works__list li a:hover {
+  background: #ff0000;
+}
+
+.works__list li div {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  transition: all 0.4s ease-in-out;
+  color: #fff;
+}
+.works__list li img {
+  transition: all 0.2s linear;
+}
+.works__lists li:hover img {
+  transform: scale(1.3);
+}
+
+.works__list li:hover div {
+  opacity: 1;
 }
