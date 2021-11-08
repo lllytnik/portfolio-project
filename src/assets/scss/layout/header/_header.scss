@@ -25,6 +25,16 @@
   -ms-transform: translate(0, -56%);
   -o-transform: translate(0, -56%);
 }
+@media (max-width: 423px) {
+  .header__topic {
+    top: 50%;
+    transform: translate(0, -40%);
+    -webkit-transform: translate(0, -40%);
+    -moz-transform: translate(0, -40%);
+    -ms-transform: translate(0, -40%);
+    -o-transform: translate(0, -40%);
+  }
+}
 .header__title {
   margin-top: 15px !important;
   font-family: "Open Sans", sans-serif;

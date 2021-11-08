@@ -1,16 +1,17 @@
 .contact {
   padding: 180px 15px;
-  /* background-image: linear-gradient(
-    -250deg,
-    #a3bfda 0%,
-    rgba(3, 214, 172, 0.96) 53%,
-    rgba(0, 215, 182, 0.92) 100%
-  ); */
-  background: #ffffff;
+  background: #4780fc;
 }
 .contact__inner {
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 830px) {
+  .contact__inner {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .contact__wrapper {
   text-align: center;
@@ -21,7 +22,7 @@
   height: 68px;
 }
 .contact__title {
-  color: #4b85d8;
+  color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-size: 37px;
   font-weight: 700;
@@ -34,13 +35,21 @@
   display: inline-block;
   width: 547px;
   height: 31px;
-  color: #4b85d8;
+  color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   text-align: center;
   letter-spacing: 0.28px;
 }
+
+@media (max-width: 830px) {
+  .contact__span {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
 .contact__btn {
   width: 180px;
   height: 55px;
@@ -49,15 +58,21 @@
   cursor: pointer;
   border-radius: 5px;
   font-family: "Open Sans", sans-serif;
-  background-color: #4b85d8;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #4780fc;
   font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 3.61px;
 }
 .contact__btn:hover {
-  background-color: #ffffff;
-  color: #4b85d8;
-  border: 2px solid #4b85d8;
+  background-color: #4780fc;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+@media (max-width: 830px) {
+  .contact__btn {
+    margin-top: 10px;
+  }
 }

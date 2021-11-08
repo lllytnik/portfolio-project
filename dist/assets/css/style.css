@@ -375,15 +375,11 @@ template {
 
 /* === LAYOUT === */
 .header {
+    position: relative;
     min-height: 100vh;
-    overflow: hidden;
-    height: 300px;
     padding: 53px 15px;
     background-size: cover;
-    background: url("../images/header/svg-editor.svg"), linear-gradient(135deg, #f5f9ff, #fff6f2);
-    background-position: 50% 100%, 0px 0px;
-    background-size: contain, auto;
-    background-repeat: no-repeat, repeat;
+    background: linear-gradient(to top, #ffffff 50%, #4780fc 50%);
 }
 
 .header__top {
@@ -403,7 +399,13 @@ template {
 }
 
 .header__topic {
-    margin-top: 287px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -56%);
+    -webkit-transform: translate(0, -56%);
+    -moz-transform: translate(0, -56%);
+    -ms-transform: translate(0, -56%);
+    -o-transform: translate(0, -56%);
 }
 
 .header__title {
@@ -742,6 +744,54 @@ ul {
     grid-area: 1/4/2/5;
 }
 
+.caroussel {
+    position: relative;
+    overflow: hidden;
+    font-size: 0;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.caroussel__inner {
+    font-size: 2rem;
+    white-space: nowrap;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.caroussel__item {
+    display: inline-block;
+    margin-right: 4rem;
+    color: #ffffff;
+    font-size: 4rem;
+    line-height: 125%;
+}
+
+.caroussel__item-active {
+    display: inline-block;
+    margin-right: 4rem;
+    color: #ffffff;
+    font-size: 4rem;
+    line-height: 125%;
+    border-bottom: 1rem solid #ffffff;
+}
+
+.caroussel__gradient {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 1;
+    background-image: linear-gradient(90deg, #4780fc, rgba(255, 255, 255, 0) 50%, #4780fc);
+}
+
 .education {
     padding: 180px 15px;
     background: #22252c;
@@ -876,10 +926,11 @@ ul {
 
 .works {
     padding: 180px 15px;
+    background-color: #ffffff;
 }
 
 .works__title {
-    color: #ffffff;
+    color: #4780fc;
     font-family: "Open Sans", sans-serif;
     font-size: 45px;
     font-weight: 700;
@@ -898,6 +949,7 @@ ul {
 
 .works__img {
     width: 100%;
+    border: 1px solid #4780fc;
 }
 
 .effects {
