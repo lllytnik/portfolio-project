@@ -1,13 +1,9 @@
 .header {
+  position: relative;
   min-height: 100vh;
   padding: 53px 15px;
   background-size: cover;
-  background: linear-gradient(
-      160deg,
-      rgba(67, 128, 211, 1) 0%,
-      rgba(105ç, 150, 211, 0.7189250700280112) 69%
-    ),
-    url("../images/header/fon-header.jpg") no-repeat;
+  background: linear-gradient(to top, #ffffff 50%, #4780fc 50%);
 }
 .header__top {
   display: flex;
@@ -21,20 +17,26 @@
   margin-left: 8px;
 }
 .header__topic {
-  margin-top: 287px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -56%);
+  -webkit-transform: translate(0, -56%);
+  -moz-transform: translate(0, -56%);
+  -ms-transform: translate(0, -56%);
+  -o-transform: translate(0, -56%);
 }
 .header__title {
   margin-top: 15px !important;
   font-family: "Open Sans", sans-serif;
   font-size: 84px;
   font-weight: 100 !important;
-  color: #ffffff;
+  color: #4b85d8;
 }
 .header__title-active {
   font-family: "Open Sans", sans-serif;
   font-size: 84px;
   font-weight: 700;
-  color: #ffffff;
+  color: #4b85d8;
 }
 .header__subtitle {
   margin-top: 10px !important;
