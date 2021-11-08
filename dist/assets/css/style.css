@@ -408,6 +408,17 @@ template {
     -o-transform: translate(0, -56%);
 }
 
+@media (max-width: 423px) {
+    .header__topic {
+        top: 50%;
+        transform: translate(0, -40%);
+        -webkit-transform: translate(0, -40%);
+        -moz-transform: translate(0, -40%);
+        -ms-transform: translate(0, -40%);
+        -o-transform: translate(0, -40%);
+    }
+}
+
 .header__title {
     margin-top: 15px !important;
     font-family: "Open Sans", sans-serif;
@@ -476,6 +487,15 @@ template {
     justify-content: space-between;
 }
 
+@media (max-width: 1080px) {
+    .about__inner {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
 .about__img {
     width: 334px;
     position: relative;
@@ -499,12 +519,31 @@ template {
     border: 5px solid #ffffff;
 }
 
+@media (max-width: 422px) {
+    .about__photo {
+        width: 100%;
+    }
+}
+
+@media (max-width: 422px) {
+    .about__photo::before {
+        display: none;
+    }
+}
+
 .about__wrap-top {
     margin: 0;
     box-sizing: border-box;
     padding: 100px 20px 0 40px;
-    width: 602px;
+    max-width: 602px;
     background: #ffffff;
+}
+
+@media (max-width: 1080px) {
+    .about__wrap-top {
+        margin-top: 50px;
+        max-width: 100%;
+    }
 }
 
 .about__wrap-botton {
@@ -542,6 +581,12 @@ template {
     line-height: normal;
     text-align: justify;
     color: #4b85d8;
+}
+
+@media (max-width: 1080px) {
+    .about__text {
+        text-align: left;
+    }
 }
 
 .about__list {
@@ -769,17 +814,20 @@ ul {
     display: inline-block;
     margin-right: 4rem;
     color: #ffffff;
+    font-family: "Lato", sans-serif;
     font-size: 4rem;
     line-height: 125%;
+    font-weight: 300;
 }
 
 .caroussel__item-active {
     display: inline-block;
     margin-right: 4rem;
     color: #ffffff;
+    font-family: "Lato", sans-serif;
     font-size: 4rem;
     line-height: 125%;
-    border-bottom: 1rem solid #ffffff;
+    font-weight: 600;
 }
 
 .caroussel__gradient {
@@ -947,6 +995,18 @@ ul {
     list-style: none;
 }
 
+@media (max-width: 768px) {
+    .works__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 425px) {
+    .works__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 .works__img {
     width: 100%;
     border: 1px solid #4780fc;
@@ -1044,13 +1104,7 @@ ul {
 
 .contact {
     padding: 180px 15px;
-  /* background-image: linear-gradient(
-    -250deg,
-    #a3bfda 0%,
-    rgba(3, 214, 172, 0.96) 53%,
-    rgba(0, 215, 182, 0.92) 100%
-  ); */
-    background: #ffffff;
+    background: #4780fc;
 }
 
 .contact__inner {
@@ -1058,6 +1112,15 @@ ul {
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
+}
+
+@media (max-width: 830px) {
+    .contact__inner {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: center;
+        align-items: center;
+    }
 }
 
 .contact__wrapper {
@@ -1071,7 +1134,7 @@ ul {
 }
 
 .contact__title {
-    color: #4b85d8;
+    color: #ffffff;
     font-family: "Open Sans", sans-serif;
     font-size: 37px;
     font-weight: 700;
@@ -1085,12 +1148,19 @@ ul {
     display: inline-block;
     width: 547px;
     height: 31px;
-    color: #4b85d8;
+    color: #ffffff;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     font-weight: 400;
     text-align: center;
     letter-spacing: 0.28px;
+}
+
+@media (max-width: 830px) {
+    .contact__span {
+        margin-top: 10px;
+        width: 100%;
+    }
 }
 
 .contact__btn {
@@ -1101,8 +1171,8 @@ ul {
     cursor: pointer;
     border-radius: 5px;
     font-family: "Open Sans", sans-serif;
-    background-color: #4b85d8;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #4780fc;
     font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
@@ -1110,14 +1180,20 @@ ul {
 }
 
 .contact__btn:hover {
-    background-color: #ffffff;
-    color: #4b85d8;
-    border: 2px solid #4b85d8;
+    background-color: #4780fc;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+@media (max-width: 830px) {
+    .contact__btn {
+        margin-top: 10px;
+    }
 }
 
 .footer {
     padding: 40px 15px;
-    background: #4b85d8;
+    background: #ffffff;
 }
 
 .footer__wrapper {
@@ -1138,12 +1214,12 @@ ul {
     margin: 74px 0 40px 0;
     width: 100%;
     height: 1px;
-    background-color: #ffffff;
+    background-color: #4780fc;
 }
 
 .footer__copyright {
     text-align: center;
-    color: #ffffff;
+    color: #4780fc;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     font-weight: 400;

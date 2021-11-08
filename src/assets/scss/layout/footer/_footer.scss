@@ -17,6 +17,11 @@
   height: 1px;
   background-color: #4780fc;
 }
+@media (max-width: 830px) {
+  .footer__line {
+    margin: 40px 0 40px 0;
+  }
+}
 .footer__copyright {
   text-align: center;
   color: #4780fc;
@@ -25,4 +30,17 @@
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.56px;
+}
+.footer .social__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4780fc;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }

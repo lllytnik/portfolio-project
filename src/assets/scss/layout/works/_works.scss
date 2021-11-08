@@ -2,6 +2,11 @@
   padding: 180px 15px;
   background-color: #ffffff;
 }
+@media (max-width: 830px) {
+  .works {
+    padding: 100px 15px;
+  }
+}
 .works__title {
   color: #4780fc;
   font-family: "Open Sans", sans-serif;

@@ -2,6 +2,11 @@
   background-color: #4780fc;
   padding: 180px 15px;
 }
+@media (max-width: 830px) {
+  .about {
+    padding: 100px 15px;
+  }
+}
 .about__inner {
   display: flex;
   justify-content: space-between;
@@ -132,6 +137,11 @@
   margin-top: 160px;
   display: flex;
   align-items: center;
+}
+@media (max-width: 830px) {
+  .about__skills {
+    margin-top: 100px;
+  }
 }
 .about__title-skills {
   display: none;
