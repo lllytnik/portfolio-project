@@ -24,7 +24,7 @@
 }
 @media (max-width: 830px) {
   .contact__wrapper {
-    margin-top: 10px;
+    margin-top: 20px;
   }
 }
 .contact__img {
@@ -39,6 +39,18 @@
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1.81px;
+}
+@media (max-width: 425px) {
+  .contact__title {
+    font-size: 34px;
+    margin-bottom: 10px !important;
+  }
+}
+@media (max-width: 325px) {
+  .contact__title {
+    font-size: 24px;
+    margin-bottom: 7px !important;
+  }
 }
 .contact__span {
   margin-top: 5px;
@@ -55,7 +67,7 @@
 
 @media (max-width: 830px) {
   .contact__span {
-    margin-top: 10px;
+    margin-top: 7px;
     width: 100%;
   }
 }
@@ -84,5 +96,10 @@
 @media (max-width: 830px) {
   .contact__btn {
     margin-top: 10px;
+  }
+}
+@media (max-width: 425px) {
+  .contact__btn {
+    margin-top: 20px;
   }
 }
