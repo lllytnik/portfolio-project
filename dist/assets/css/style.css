@@ -1128,6 +1128,28 @@ ul {
     opacity: 1;
 }
 
+.works__btn-active {
+    display: none;
+}
+
+@media (max-width: 320px) {
+    .works__item {
+        display: none;
+    }
+
+    .works__item.active {
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+
+@media (max-width: 320px) {
+    .works__btn-active {
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+
 .contact {
     padding: 180px 15px;
     background: #4780fc;
@@ -1246,6 +1268,9 @@ ul {
 @media (max-width: 425px) {
     .contact__btn {
         margin-top: 20px;
+        width: 140px;
+        height: 45px;
+        font-size: 16px;
     }
 }
 
