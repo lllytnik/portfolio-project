@@ -395,11 +395,42 @@ template {
 }
 
 .header__logo {
+    position: absolute;
     margin-left: 8px;
+    -webkit-animation: animL 2s;
+    animation: animL 2s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation: animLogo 2s;
+}
+
+@-webkit-keyframes animLogo {
+    from {
+        left: -3999px;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@keyframes animLogo {
+    from {
+        left: -3999px;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+.header__wrap {
+    position: relative;
 }
 
 .header__topic {
     position: absolute;
+    height: 194px;
     top: 50%;
     transform: translate(0, -56%);
     -webkit-transform: translate(0, -56%);
@@ -411,27 +442,59 @@ template {
 @media (max-width: 423px) {
     .header__topic {
         top: 50%;
-        transform: translate(0, -40%);
-        -webkit-transform: translate(0, -40%);
-        -moz-transform: translate(0, -40%);
-        -ms-transform: translate(0, -40%);
-        -o-transform: translate(0, -40%);
+        transform: translate(0, -56%);
+        -webkit-transform: translate(0, -56%);
+        -moz-transform: translate(0, -56%);
+        -ms-transform: translate(0, -56%);
+        -o-transform: translate(0, -56%);
     }
 }
 
 .header__title {
-    margin-top: 15px !important;
+    position: absolute;
+    top: 119px;
+    width: 410px;
     font-family: "Open Sans", sans-serif;
     font-size: 84px;
     font-weight: 100 !important;
-    color: #4b85d8;
+    color: #4780fc;
+    animation: animTitle 2s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation: animTitle 2s;
+}
+
+@-webkit-keyframes animTitle {
+    from {
+        left: 3999px;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@keyframes animTitle {
+    from {
+        left: 3999px;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@media (max-width: 423px) {
+    .header__title {
+        width: 100%;
+    }
 }
 
 .header__title-active {
     font-family: "Open Sans", sans-serif;
     font-size: 84px;
     font-weight: 700;
-    color: #4b85d8;
+    color: #4780fc;
 }
 
 .header__subtitle {
@@ -476,8 +539,10 @@ template {
 }
 
 .about {
+    position: relative;
+    z-index: 1;
     background-color: #4780fc;
-    padding: 180px 15px;
+    padding: 90px 15px 90px 15px;
 }
 
 @media (max-width: 830px) {
@@ -504,25 +569,24 @@ template {
 
 .about__img {
     width: 334px;
-    position: relative;
 }
 
 .about__photo {
-    float: left;
     position: relative;
     width: 334px;
     height: 417px;
     background: #9900ff;
 }
 
-.about__photo::before {
+.about__photo::after {
     content: "";
-    top: 20px;
+    top: -30px;
     left: 20px;
     width: 334px;
     height: 417px;
     position: absolute;
     border: 5px solid #ffffff;
+    z-index: -1;
 }
 
 @media (max-width: 422px) {
@@ -532,7 +596,7 @@ template {
 }
 
 @media (max-width: 422px) {
-    .about__photo::before {
+    .about__photo::after {
         display: none;
     }
 }
@@ -540,7 +604,7 @@ template {
 .about__wrap-top {
     margin: 0;
     box-sizing: border-box;
-    padding: 100px 20px 0 40px;
+    padding: 40px 20px 0 40px;
     max-width: 602px;
     background: #ffffff;
 }
@@ -673,7 +737,7 @@ template {
 }
 
 .about__skills {
-    margin-top: 160px;
+    margin-top: 90px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -848,7 +912,7 @@ ul {
     right: 0%;
     bottom: 0%;
     z-index: 1;
-    background-image: linear-gradient(90deg, #4780fc, rgba(255, 255, 255, 0) 50%, #4780fc);
+    background-image: linear-gradient(to right, #4780fc, rgba(15, 141, 243, 0) 47.48%, #4780fc);
 }
 
 .education {
@@ -1080,7 +1144,7 @@ ul {
 
 @media (max-width: 350px) {
     .works__list li {
-        font-size: 10px;
+        font-size: 12px;
     }
 }
 
@@ -1112,12 +1176,13 @@ ul {
     text-decoration: none;
     color: #fff;
     transition: all 0.4s ease-in-out;
-    border: 1px solid transparent;
     padding: 5px 5px;
+    border: 1px solid #ffffff;
 }
 
 .works__list li a:hover {
     padding: 5px 5px;
+    background-color: #4780fc;
     border: 1px solid #ffffff;
 }
 

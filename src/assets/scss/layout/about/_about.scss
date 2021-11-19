@@ -1,6 +1,8 @@
 .about {
+  position: relative;
+  z-index: 1;
   background-color: #4780fc;
-  padding: 180px 15px;
+  padding: 90px 15px 90px 15px;
 }
 @media (max-width: 830px) {
   .about {
@@ -19,38 +21,38 @@
 }
 .about__img {
   width: 334px;
-  position: relative;
 }
 .about__photo {
-  float: left;
   position: relative;
   width: 334px;
   height: 417px;
   background: rgb(153, 0, 255);
-  &::before {
-    content: "";
-    top: 20px;
-    left: 20px;
-    width: 334px;
-    height: 417px;
-    position: absolute;
-    border: 5px solid #ffffff;
-  }
 }
+.about__photo::after {
+  content: "";
+  top: -30px;
+  left: 20px;
+  width: 334px;
+  height: 417px;
+  position: absolute;
+  border: 5px solid #ffffff;
+  z-index: -1;
+}
+
 @media (max-width: 422px) {
   .about__photo {
     width: 100%;
   }
 }
 @media (max-width: 422px) {
-  .about__photo::before {
+  .about__photo::after {
     display: none;
   }
 }
 .about__wrap-top {
   margin: 0;
   box-sizing: border-box;
-  padding: 100px 20px 0 40px;
+  padding: 40px 20px 0 40px;
   max-width: 602px;
   background: #ffffff;
 }
@@ -168,7 +170,7 @@
   color: #00d7bb;
 }
 .about__skills {
-  margin-top: 160px;
+  margin-top: 90px;
   display: flex;
   align-items: center;
 }
