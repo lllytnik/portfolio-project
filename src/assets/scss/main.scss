@@ -23,7 +23,9 @@ h6 {
 @import "./layout/works/works";
 @import "./layout/contact/contact";
 @import "./layout/footer/footer";
-
+/* === THEME === */
+@import "./theme/light";
+@import "./theme/dark";
 /* === COMPONENTS === */
 @import "./components/buttons";
 /* === ABSTRACTS === */

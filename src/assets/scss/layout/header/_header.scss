@@ -3,7 +3,7 @@
   min-height: 100vh;
   padding: 53px 15px;
   background-size: cover;
-  background: linear-gradient(to top, #ffffff 50%, #4780fc 50%);
+  background: var(--back-colorHeder);
 }
 .header__top {
   display: flex;
@@ -59,16 +59,16 @@
   font-size: 84px;
   font-weight: 100 !important;
   color: #4780fc;
-  animation: animTitle 2s;
-  animation-duration: 2s;
-  -webkit-animation: animTitle 2s;
+  animation: animTitle 4s;
+  animation-duration: 4s;
+  -webkit-animation: animTitle 4s;
 }
 @keyframes animTitle {
   from {
-    left: 3999px;
+    opacity: 0;
   }
   to {
-    left: 0;
+    opacity: 1;
   }
 }
 @media (max-width: 423px) {
@@ -121,7 +121,9 @@
   $random_range: $min + floor($rand * (($max - $min) + 1));
   @return $random_range;
 }
-
+.header__box-snow {
+  position: fixed;
+}
 .snow {
   $total: 200;
   position: absolute;
