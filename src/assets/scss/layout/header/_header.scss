@@ -16,18 +16,8 @@
 .header__logo {
   position: absolute;
   margin-left: 8px;
-  animation: animL 2s;
-  animation-duration: 2s;
-  -webkit-animation: animLogo 2s;
 }
-@keyframes animLogo {
-  from {
-    left: -3999px;
-  }
-  to {
-    left: 0;
-  }
-}
+
 .header__wrap {
   position: relative;
 }

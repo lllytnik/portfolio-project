@@ -1,10 +1,10 @@
 .works {
-  padding: 180px 15px;
+  padding: 75px 15px;
   background-color: #ffffff;
 }
 @media (max-width: 830px) {
   .works {
-    padding: 100px 15px;
+    padding: 50px 15px;
   }
 }
 .works__inner {
@@ -34,7 +34,7 @@
   }
 }
 .works__list {
-  margin-top: 100px;
+  margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
@@ -43,13 +43,13 @@
 @media (max-width: 768px) {
   .works__list {
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 60px;
+    margin-top: 40px;
   }
 }
 @media (max-width: 425px) {
   .works__list {
     grid-template-columns: repeat(1, 1fr);
-    margin-top: 40px;
+    margin-top: 25px;
   }
 }
 .works__img {
