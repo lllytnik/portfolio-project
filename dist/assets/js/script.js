@@ -1,3 +1,16 @@
+
+$(document).ready(function () {
+    $('.header__burger').click(function (event) {
+        $('.header__burger,.header__nav').toggleClass('active');
+        $('body').toggleClass('lock');
+    });
+    $('.header__nav').click(function () {
+        $('.header__burger, .header__nav').removeClass('active');
+        $('body').removeClass('lock');
+    });
+});
+
+
 $('img.img-svg').each(function () {
     var $img = $(this);
     var imgClass = $img.attr('class');

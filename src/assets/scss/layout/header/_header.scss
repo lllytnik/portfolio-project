@@ -96,14 +96,44 @@
 .logo__img {
   width: 285px;
 }
-.header__burger-btn {
-  outline: none;
-  cursor: pointer;
-  background: transparent;
-  border: none;
+
+.header__nav {
+  display: flex;
 }
-.header__burger-img {
-  width: 39px;
+@media (max-width: 767px) {
+  .header__nav {
+    display: none;
+  }
+  .header__nav.active {
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 111;
+    background-color: #4780fc;
+  }
+}
+.nav__list {
+  display: flex;
+}
+.nav__item {
+  margin-right: 15px;
+}
+.nav__item:last-child {
+  margin-right: 0px;
+}
+.nav__link {
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  list-style: none;
 }
 
 @function random_range($min, $max) {
@@ -148,5 +178,67 @@
         transform: translate($random-x-end-yoyo, 100vh) scale($random-scale);
       }
     }
+  }
+}
+.header__burger {
+  display: none;
+}
+.header__burger.active::before {
+  top: 9px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+.header__burger.active::after {
+  bottom: 9px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+.header__burger span {
+  position: absolute;
+  background-color: #ffffff;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  top: 9px;
+}
+.header__burger.active span {
+  top: 9px;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+}
+@media (max-width: 767px) {
+  body.lock {
+    overflow: hidden;
+  }
+  .header__burger {
+    z-index: 999;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+  }
+  .header__burger::before,
+  .header__burger::after {
+    content: "";
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+  .header__burger::before {
+    top: 0;
+  }
+  .header__burger::after {
+    bottom: 0;
   }
 }
