@@ -13,6 +13,22 @@
 .header__social {
   min-width: 100px;
 }
+@media (max-width: 767px) {
+  .header__social {
+    z-index: 999;
+  }
+  .header__social.active {
+    margin-top: 50px;
+    width: 100%;
+  }
+  .header__top.active {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .social__list.active {
+    justify-content: space-around;
+  }
+}
 .header__logo {
   position: absolute;
   margin-left: 8px;
@@ -121,6 +137,19 @@
 }
 .nav__list {
   display: flex;
+}
+@media (max-width: 374px) {
+  .header__nav.active {
+    padding-top: 175px;
+  }
+  .nav__list {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav__list li {
+    margin-right: 0;
+    margin-top: 10px;
+  }
 }
 .nav__item {
   margin-right: 15px;
